@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" filepath="$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" filepath="$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack_arithmetic/Stack_arithmetic.iml" filepath="$PROJECT_DIR$/Stack_arithmetic/Stack_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tree_arithmetic/Tree_arithmetic.iml" filepath="$PROJECT_DIR$/Tree_arithmetic/Tree_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/arithmetic.iml" filepath="$PROJECT_DIR$/.idea/arithmetic.iml" />
+    </modules>
+  </component>
+</project>
