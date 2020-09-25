@@ -4,7 +4,28 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
+
+
 <body>
+
+        <img id="img" src="img/1.jpg" alt="" height="100%" width="100%">
+<script>
+
+     var number=1;
+     var img = document.getElementById("img");
+     function fun(){
+         number++;
+         if (number>4) number=1;
+
+         img.src="img/"+number+".jpg";
+     }
+
+     setInterval(fun,3000);
+
+
+
+</script>
 
 </body>
 </html>

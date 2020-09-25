@@ -44,7 +44,7 @@ public class KthLargest {
         this.k = k;
         pqueue=new PriorityQueue<>();
         for (int num : nums) {
-
+            add(num);
             //pqueue.offer(num);
         }
 
