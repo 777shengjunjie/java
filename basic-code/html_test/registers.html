@@ -6,6 +6,7 @@
 
     <style>
         *{
+        /*    border: 1px solid red;*/
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -19,6 +20,7 @@
         }
 
         .rg_layout{
+
             width: 900px;
             height: 500px;
             border: 3px solid #EEEEEE;
@@ -43,14 +45,14 @@
 
 
         .rg_center{
-           /* border: 1px solid red;*/
+        /*    border: 1px solid red;*/
             float: left;
 
             width: 550px;
         }
 
         .rg_right{
-          /*  border: 1px solid red;*/
+       /*     border: 1px solid red;*/
             float: right;
             margin: 15px;
         }
@@ -71,6 +73,10 @@
 
         .td_right{
             padding-left: 50px;
+
+        }
+        .error{
+            color: red;
         }
 
         #username,#password,#email,#name,#tel,#birthday,#checkcode {
@@ -97,6 +103,51 @@
         }
 
     </style>
+    <script>
+
+        window.onload=function (){
+
+            document.getElementById("form").onsubmit=function (){
+
+                return checkUsername()&&checkPassword();
+            }
+
+            document.getElementById("username").onblur=checkUsername;
+            document.getElementById("password").onblur=checkPassword;
+
+        }
+
+
+
+        function checkUsername(){
+            let username=document.getElementById("username").value;
+            let reg_username=/^\w{6,12}$/;
+            let flag=reg_username.test(username);
+            let s_username=document.getElementById("s_username");
+            if (flag){
+                s_username.innerHTML="<img width='35' height='25' src='img/gou.png' />";
+            }else {
+                s_username.innerHTML="<label style='font-size: 13px;'>用户格式输入有误</label>"
+            }
+            return flag;
+
+        }
+
+        function checkPassword(){
+            let username=document.getElementById("password").value;
+            let reg_username=/^\w{6,12}$/;
+            let flag=reg_username.test(username);
+            let s_password=document.getElementById("s_password");
+            if (flag){
+                s_password.innerHTML="<img width='35' height='25' src='img/gou.png' />";
+            }else {
+                s_password.innerHTML="<label style='font-size: 13px;'>密码格式输入有误</label>"
+            }
+            return flag;
+
+        }
+
+    </script>
 </head>
 <body>
 
@@ -109,16 +160,23 @@
         
         <div class="rg_center">
             <div class="rg_form">
-                <form action="#" method="post">
+                <form action="#" id="form" method="get">
                     <table >
                         <tr>
                             <td class="td_left"><label for="username">用户名</label></td>
-                            <td class="td_right"><input type="text" id="username" name="username" placeholder="请输入账号" ></td>
+                            <td class="td_right"><input type="text" id="username" name="username" placeholder="请输入账号" />
+                                <span id="s_username" class="error"></span>
+                            </td>
+
+
                         </tr>
 
                         <tr>
                             <td class="td_left"><label for="password">密码</label></td>
-                            <td class="td_right"><input type="password" id="password" name="password" placeholder="请输入密码" ></td>
+                            <td class="td_right">
+                                <input type="password" id="password" name="password" placeholder="请输入密码" >
+                                <span id="s_password" class="error"></span>
+                            </td>
                         </tr>
 
                         <tr>
@@ -138,7 +196,7 @@
 
                         <tr>
                             <td class="td_left"><label >性别</label></td>
-                            <td class="td_right"><input type="radio" name="gender">男
+                            <td class="td_right"><input type="radio" name="gender" checked>男
                                 <input type="radio" name="gender">女
                             </td>
                         </tr>
@@ -157,7 +215,7 @@
                         </tr>
 
                         <tr>
-                            <td colspan="2" align="center"><input type="submit" id="btn_sub" value="注册"></td>
+                            <td colspan="2" align="center" ><input type="submit" id="btn_sub" value="注册"></td>
                         </tr>
                     </table>
                 </form>
