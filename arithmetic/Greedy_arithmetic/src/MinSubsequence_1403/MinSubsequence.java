@@ -15,16 +15,37 @@ package MinSubsequence_1403;
         注意，题目数据保证满足所有约束条件的解决方案是 唯一 的。同时，返回的答案应当按 非递增顺序 排列。
 */
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+
 
 public class MinSubsequence {
 
     public static void main(String[] args) {
 
+        int[] nums={6};
+        List<Integer> result=new MinSubsequence().minSubsequence(nums);
+        System.out.println(result);
+
     }
 
     public List<Integer> minSubsequence(int[] nums){
+        List<Integer> list=new ArrayList<>();
+        Arrays.sort(nums);
+        int sum=0,listSum=0;
+        for (int num : nums) {
+            sum+=num;
+        }
+        for (int i = nums.length-1; i >=0; i--) {
+            listSum+=nums[i];
+            list.add(nums[i]);
+            if (listSum>sum-listSum){
+                break;
+            }
+        }
 
+        return list;
 
     }
 }
