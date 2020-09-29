@@ -11,6 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/Xml/Xml.iml" filepath="$PROJECT_DIR$/Xml/Xml.iml" />
       <module fileurl="file://$PROJECT_DIR$/basic-code.iml" filepath="$PROJECT_DIR$/basic-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/html_test/html_test.iml" filepath="$PROJECT_DIR$/html_test/html_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tomcat/tomcat.iml" filepath="$PROJECT_DIR$/tomcat/tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tomcat_learning/tomcat_learning.iml" filepath="$PROJECT_DIR$/tomcat_learning/tomcat_learning.iml" />
     </modules>
   </component>
 </project>
