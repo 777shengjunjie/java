@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="DownLoad:war">
+    <output-path>$PROJECT_DIR$/DownLoad/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>DownLoad</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="DownLoad-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="DownLoad:war exploded" />
+    </root>
+  </artifact>
+</component>
