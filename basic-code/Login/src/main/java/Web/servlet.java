@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
@@ -28,6 +29,8 @@ public class servlet extends HttpServlet {
         loginUser.setUsername(username);
         loginUser.setPassword(password);*/
         Map<String, String[]> map = req.getParameterMap();
+        String checkCode;
+
         User loginUser=new User();
 
         try {
@@ -37,9 +40,35 @@ public class servlet extends HttpServlet {
         } catch (InvocationTargetException e) {
             e.printStackTrace();
         }
+        HttpSession session = req.getSession();
+        String checkCode_session = (String)session.getAttribute("checkCode_session");
+
+        session.removeAttribute("checkCode_session");
+        if (checkCode_session!=null&& checkCode_session.equalsIgnoreCase(loginUser.getCheckCode())){
+
+            UserDao dao=new UserDao();
+            User user = dao.login(loginUser);
 
 
-        UserDao dao=new UserDao();
+            if (user==null){
+                //失败
+                req.setAttribute("login_error","用户名和密码错误");
+                req.getRequestDispatcher("/login.jsp").forward(req,resp);
+            }else {
+                //成功
+                session.setAttribute("user",user.getUsername());
+                resp.sendRedirect(req.getContextPath()+"/success.jsp");
+            }
+
+
+        }else {
+
+            req.setAttribute("cc_error","验证码错误");
+            req.getRequestDispatcher("/login.jsp").forward(req,resp);
+
+        }
+
+      /*  UserDao dao=new UserDao();
         User user = dao.login(loginUser);
 
         if (user==null){
@@ -48,7 +77,7 @@ public class servlet extends HttpServlet {
             req.setAttribute("user",user);
             req.getRequestDispatcher("/successServlet").forward(req,resp);
         }
-
+*/
 
 
     }

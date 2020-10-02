@@ -2,9 +2,28 @@ package domain;
 
 public class User {
 
+    private String checkCode;
     private int id;
     private String username;
     private String password;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "checkCode='" + checkCode + '\'' +
+                ", id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
+    public String getCheckCode() {
+        return checkCode;
+    }
+
+    public void setCheckCode(String checkCode) {
+        this.checkCode = checkCode;
+    }
 
     public int getId() {
         return id;
@@ -28,14 +47,5 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
     }
 }
