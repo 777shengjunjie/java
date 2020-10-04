@@ -9,10 +9,12 @@
         <module name="tomcat_learning" />
         <module name="Login" />
         <module name="tomcat" />
+        <module name="day17" />
         <module name="DownLoad" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="day17" target="1.8" />
       <module name="DownLoad" target="1.8" />
       <module name="Login" target="1.8" />
       <module name="tomcat" target="1.8" />

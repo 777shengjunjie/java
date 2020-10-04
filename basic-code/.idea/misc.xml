@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day17" />
     <file type="web" url="file://$PROJECT_DIR$/DownLoad" />
     <file type="web" url="file://$PROJECT_DIR$/Login" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat" />
@@ -13,6 +14,7 @@
         <option value="$PROJECT_DIR$/tomcat/pom.xml" />
         <option value="$PROJECT_DIR$/Login/pom.xml" />
         <option value="$PROJECT_DIR$/DownLoad/pom.xml" />
+        <option value="$PROJECT_DIR$/day17/pom.xml" />
       </list>
     </option>
   </component>

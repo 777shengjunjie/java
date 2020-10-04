@@ -1,7 +1,7 @@
 package Web;
 
 
-import Dao.UserDao;
+import dao.UserDao;
 import domain.User;
 import org.apache.commons.beanutils.BeanUtils;
 

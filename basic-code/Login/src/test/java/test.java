@@ -1,4 +1,4 @@
-import Dao.UserDao;
+import dao.UserDao;
 import domain.User;
 import org.junit.jupiter.api.Test;
 
