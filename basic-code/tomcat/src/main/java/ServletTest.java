@@ -8,10 +8,12 @@ import java.io.IOException;
 @WebServlet("/Servlet")
 public class ServletTest extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=utf-8");
 
+        response.getWriter().write("登录失败，用户名或者密码错误");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+         this.doPost(request,response);
     }
 }

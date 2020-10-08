@@ -75,18 +75,18 @@
     <h3 style="text-align: center">用户信息列表</h3>
 
     <div style="float: left">
-        <form class="form-inline">
+        <form class="form-inline" action="${pageContext.request.contextPath}/findUserByPageServlet" method="post">
             <div class="form-group">
                 <label for="exampleInputName2">姓名</label>
-                <input type="text" class="form-control" id="exampleInputName2" >
+                <input type="text" name="name" value="${condition.name[0]}" class="form-control" id="exampleInputName2" >
             </div>
             <div class="form-group">
                 <label for="exampleInputName3">籍贯</label>
-                <input type="text" class="form-control" id="exampleInputName3" >
+                <input type="text" name="address" value="${condition.address[0]}" class="form-control" id="exampleInputName3" >
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail2">邮箱</label>
-                <input type="email" class="form-control" id="exampleInputEmail2" >
+                <input type="email" name="email" value="${condition.email[0]}" class="form-control" id="exampleInputEmail2" >
             </div>
             <button type="submit" class="btn btn-default">查询</button>
         </form>
@@ -111,7 +111,7 @@
             <th>操作</th>
         </tr>
 
-       <c:forEach items="${users}" var="user" varStatus="s">
+       <c:forEach items="${pb.list}" var="user" varStatus="s">
            <tr>
                <td><input type="checkbox" name="uid" value="${user.id}"></td>
                <td>${s.count}</td>
@@ -134,23 +134,52 @@
     <div>
         <nav aria-label="Page navigation">
             <ul class="pagination">
+                <c:if test="${pb.currentPage==1}">
+                    <li class="disabled">
+                </c:if>
+
+                <c:if test="${pb.currentPage!=1}">
                 <li>
-                    <a href="#" aria-label="Previous">
+                </c:if>
+
+                    <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage-1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}"
+                       aria-label="Previous">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
+
+
+                <c:forEach begin="1" end="${pb.totalPage}" var="i">
+
+                    <c:if test="${pb.currentPage==i}">
+                        <li class="active"><a  href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a></li>
+                    </c:if>
+
+                    <c:if test="${pb.currentPage!=i}">
+                        <li><a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${i}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}">${i}</a></li>
+                    </c:if>
+
+
+                </c:forEach>
+
+            <c:if test="${pb.currentPage==pb.totalPage}">
+                <li class="disabled">
+            </c:if>
+
+            <c:if test="${pb.currentPage!=pb.totalPage}">
                 <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
+            </c:if>
+
+            <a href="${pageContext.request.contextPath}/findUserByPageServlet?currentPage=${pb.currentPage+1}&rows=5&name=${condition.name[0]}&address=${condition.address[0]}&email=${condition.email[0]}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+
+            </li>
+
+
+
                 <span style="font-size: 25px;margin-left: 5px">
-                    共16条记录，共4页
+                    共${pb.totalCount}条记录，共${pb.totalPage}页
 
                 </span>
             </ul>

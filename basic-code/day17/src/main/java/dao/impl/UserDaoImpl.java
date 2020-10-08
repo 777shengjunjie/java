@@ -6,7 +6,10 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import util.JDBCUtil;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class UserDaoImpl  implements UserDao {
 
@@ -62,5 +65,54 @@ public class UserDaoImpl  implements UserDao {
         template.update(sql,user.getName(),user.getGender(),user.getAge(),
                 user.getAddress(),user.getQq(),user.getEmail(),user.getId());
 
+    }
+
+    @Override
+    public int findTotalCount(Map<String, String[]> condition) {
+
+        String sql="select count(*) from user where 1=1 ";
+        StringBuilder sb=new StringBuilder();
+        sb.append(sql);
+        Set<String> keySet = condition.keySet();
+        List<Object> list=new ArrayList<>();
+        for (String key : keySet) {
+            if ("currentPage".equals(key)||"rows".equals(key)){
+                continue;
+            }
+
+            String value = condition.get(key)[0];
+            if (value!=null&&!"".equals(value)){
+                sb.append(" and "+key+" like ? ");
+                list.add("%"+value+"%");
+            }
+        }
+
+        return template.queryForObject(sb.toString(),Integer.class,list.toArray());
+    }
+
+    @Override
+    public List<User> findByPage(int start, int rows, Map<String, String[]> condition) {
+
+        String sql="select * from user where 1 = 1 ";
+        StringBuilder sb=new StringBuilder();
+        sb.append(sql);
+        Set<String> keySet = condition.keySet();
+        List<Object> list=new ArrayList<>();
+        for (String key : keySet) {
+            if ("currentPage".equals(key)||"rows".equals(key)){
+                continue;
+            }
+            String value = condition.get(key)[0];
+            if (value!=null&&!"".equals(value)){
+                sb.append(" and "+key+" like ? ");
+                list.add("%"+value+"%");
+            }
+        }
+
+        sb.append(" limit ? , ?");
+        list.add(start);
+        list.add(rows);
+
+        return template.query(sb.toString(),new BeanPropertyRowMapper<User>(User.class),list.toArray());
     }
 }

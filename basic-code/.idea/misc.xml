@@ -4,6 +4,8 @@
     <file type="web" url="file://$PROJECT_DIR$/day17" />
     <file type="web" url="file://$PROJECT_DIR$/DownLoad" />
     <file type="web" url="file://$PROJECT_DIR$/Login" />
+    <file type="web" url="file://$PROJECT_DIR$/maven_web" />
+    <file type="web" url="file://$PROJECT_DIR$/test" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat_learning" />
   </component>
@@ -15,6 +17,8 @@
         <option value="$PROJECT_DIR$/Login/pom.xml" />
         <option value="$PROJECT_DIR$/DownLoad/pom.xml" />
         <option value="$PROJECT_DIR$/day17/pom.xml" />
+        <option value="$PROJECT_DIR$/maven_java/pom.xml" />
+        <option value="$PROJECT_DIR$/maven_web/pom.xml" />
       </list>
     </option>
   </component>

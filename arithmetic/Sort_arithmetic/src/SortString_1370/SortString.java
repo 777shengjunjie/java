@@ -1,6 +1,9 @@
 package SortString_1370;
 
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 /*
 给你一个字符串 s ，请你根据下面的算法重新构造字符串：
@@ -21,10 +24,43 @@ public class SortString {
 
     public static void main(String[] args) {
 
+        String s="aaaabbbbcccc";
+        String result=new SortString().sortString(s);
+        System.out.println(result);
+
+
     }
 
     public String sortString(String s){
 
+        StringBuilder sb=new StringBuilder();
+        int[] count=new int[26];
+        for (int i=0;i<s.length();i++){
+            count[s.charAt(i)-'a']++;
+        }
+        while (sb.length()<s.length()){
+
+            for (int i=0;i<26;i++){
+                if (count[i]>0){
+                    count[i]--;
+                    sb.append((char)(i+97));
+                }
+            }
+
+            for (int i=25;i>=0;i--){
+                if (count[i]>0){
+                    count[i]--;
+                    sb.append((char)(i+97));
+                }
+            }
+
+
+        }
+
+
+        return sb.toString();
 
     }
+
+
 }

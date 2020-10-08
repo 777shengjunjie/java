@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tomcat_learning" />
-        <module name="Login" />
+        <module name="maven_java" />
         <module name="tomcat" />
+        <module name="maven_web" />
+        <module name="Login" />
         <module name="day17" />
         <module name="DownLoad" />
       </profile>
@@ -17,6 +19,9 @@
       <module name="day17" target="1.8" />
       <module name="DownLoad" target="1.8" />
       <module name="Login" target="1.8" />
+      <module name="maven_java" target="1.7" />
+      <module name="maven_web" target="1.7" />
+      <module name="test" target="1.7" />
       <module name="tomcat" target="1.8" />
       <module name="tomcat_learning" target="1.8" />
     </bytecodeTargetLevel>
