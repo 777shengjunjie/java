@@ -1,5 +1,8 @@
 package cn.itcast.travel.web.servlet;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,12 +21,12 @@ public class BaseServlet extends HttpServlet {
      /*   System.out.println("base的...");*/
 
         String uri = req.getRequestURI();
-        System.out.println("请求uri："+uri);  ///travel/user/add
+       // System.out.println("请求uri："+uri);  ///travel/user/add
         String methodName= uri.substring(uri.lastIndexOf('/') + 1);
-        System.out.println("方法名称："+methodName);
+       // System.out.println("方法名称："+methodName);
         //获取方法对象Method
         //谁调用我？就是谁
-        System.out.println(this);//cn.itcast.travel.web.servlet.UserServlet@3cfa295f
+       // System.out.println(this);//cn.itcast.travel.web.servlet.UserServlet@3cfa295f
 
         try {
             Method method = this.getClass().getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
@@ -36,6 +39,29 @@ public class BaseServlet extends HttpServlet {
             e.printStackTrace();
         }
 
+    }
+
+    /**
+     * 直接将传入的对象序列化为json，并且写回客户端
+     * @param obj
+     * @param response
+     * @throws IOException
+     */
+    public void writeValue(Object obj,HttpServletResponse response) throws IOException {
+
+        ObjectMapper mapper=new ObjectMapper();
+        response.setContentType("application/json;charset=utf-8");
+        mapper.writeValue(response.getOutputStream(),obj);
+
 
     }
+
+    public String writeValueAsString(Object obj) throws JsonProcessingException {
+        ObjectMapper mapper=new ObjectMapper();
+        return mapper.writeValueAsString(obj);
+
+    }
+
+
+
 }

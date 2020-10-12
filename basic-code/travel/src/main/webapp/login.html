@@ -28,7 +28,7 @@
 
 
 
-				$.post("loginServlet",$("#loginForm").serialize(),function (data){
+				$.post("user/login",$("#loginForm").serialize(),function (data){
 
 					$("#span_check").attr("src","/travel/checkCode"+"?" + Math.random());
 

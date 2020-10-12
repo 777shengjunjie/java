@@ -136,7 +136,7 @@
 						&&checkTelephone()&&checkBirthday()&&checkCheck()){
 
 					//校验通过，发送ajax请求，提交表单数据。 username=zhangsan &password=123
-					$.post("registerUserServlet",$(this).serialize(),function (data){
+					$.post("user/regist",$(this).serialize(),function (data){
 
 						$("#img_checkCode").attr("src","/travel/checkCode"+"?" + Math.random());
 

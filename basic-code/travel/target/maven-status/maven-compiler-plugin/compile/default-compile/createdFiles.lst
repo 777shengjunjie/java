@@ -6,10 +6,12 @@ cn\itcast\travel\web\servlet\RegisterUserServlet.class
 cn\itcast\travel\dao\UserDao.class
 cn\itcast\travel\service\UserService.class
 cn\itcast\travel\util\MailUtils.class
+cn\itcast\travel\dao\CategoryDao.class
 cn\itcast\travel\util\JedisUtil.class
 cn\itcast\travel\util\MailUtils$1.class
 cn\itcast\travel\web\servlet\ExitServlet.class
 cn\itcast\travel\util\UuidUtil.class
+cn\itcast\travel\service\Impl\CategoryServiceImpl.class
 cn\itcast\travel\web\servlet\CategoryServlet.class
 cn\itcast\travel\web\servlet\FindUserServlet.class
 cn\itcast\travel\domain\Category.class
@@ -19,8 +21,10 @@ cn\itcast\travel\web\servlet\CheckCodeServlet.class
 cn\itcast\travel\web\filter\CharchaterFilter.class
 cn\itcast\travel\domain\RouteImg.class
 cn\itcast\travel\service\Impl\UserServiceImpl.class
+cn\itcast\travel\service\CategoryService.class
 cn\itcast\travel\domain\User.class
 cn\itcast\travel\domain\ResultInfo.class
 cn\itcast\travel\domain\Route.class
 cn\itcast\travel\domain\Favorite.class
 cn\itcast\travel\dao\Impl\UserDaoImpl.class
+cn\itcast\travel\dao\Impl\CategoryDaoImpl.class
