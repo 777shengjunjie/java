@@ -25,9 +25,13 @@ E:\java\basic-code\travel\src\main\java\cn\itcast\travel\dao\CategoryDao.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\dao\Impl\RouteDaoImpl.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\dao\Impl\SellerDaoImpl.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\dao\Impl\CategoryDaoImpl.java
+E:\java\basic-code\travel\src\main\java\cn\itcast\travel\service\FavoriteService.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\service\UserService.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\web\filter\CharchaterFilter.java
+E:\java\basic-code\travel\src\main\java\cn\itcast\travel\dao\FavoriteDao.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\service\CategoryService.java
+E:\java\basic-code\travel\src\main\java\cn\itcast\travel\service\Impl\FavoriteServiceImpl.java
+E:\java\basic-code\travel\src\main\java\cn\itcast\travel\dao\Impl\FavoriteDaoImpl.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\domain\Favorite.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\web\servlet\RouteServlet.java
 E:\java\basic-code\travel\src\main\java\cn\itcast\travel\domain\ResultInfo.java
