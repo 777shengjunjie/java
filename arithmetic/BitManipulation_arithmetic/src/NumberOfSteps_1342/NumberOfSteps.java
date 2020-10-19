@@ -10,10 +10,40 @@ public class NumberOfSteps {
 
     public static void main(String[] args) {
 
+        int num=14;
+        int result =new NumberOfSteps().numberOfSteps2(num);
+        System.out.println(result);
     }
 
     public int numberOfSteps(int num){
 
+        int count=0;
+
+        while (num!=0){
+
+            if (num%2==0){
+                num/=2;
+                count++;
+            }else {
+                num-=1;
+                count++;
+            }
+
+        }
+
+        return count;
+
+    }
+
+    public int numberOfSteps2(int num){
+
+        int count = 0;
+        while (num != 0) {
+            count++;
+            //num & -2
+            num = (num & 1) == 1 ? num - 1 : num >> 1;
+        }
+        return count;
 
 
     }

@@ -16,6 +16,14 @@ public class CharchaterFilter implements Filter {
 
         HttpServletRequest request=(HttpServletRequest)req;
         HttpServletResponse response=(HttpServletResponse)resp;
+
+        String url=request.getRequestURI();
+        //如果资源名包含css样式表、js样式表或者png图片就放行
+        if(url.contains(".css")||url.contains(".js")||url.contains(".png")) {
+            chain.doFilter(request, response);
+            return;
+        }
+
         String method = request.getMethod();
         if (method.equalsIgnoreCase("Post")){
             request.setCharacterEncoding("utf-8");
