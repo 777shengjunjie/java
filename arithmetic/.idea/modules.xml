@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BitManipulation_arithmetic/BitManipulation_arithmetic.iml" filepath="$PROJECT_DIR$/BitManipulation_arithmetic/BitManipulation_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Depth_first_Search_arithmetic/Depth_first_Search_arithmetic.iml" filepath="$PROJECT_DIR$/Depth_first_Search_arithmetic/Depth_first_Search_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Greedy_arithmetic/Greedy_arithmetic.iml" filepath="$PROJECT_DIR$/Greedy_arithmetic/Greedy_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" filepath="$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" filepath="$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" />

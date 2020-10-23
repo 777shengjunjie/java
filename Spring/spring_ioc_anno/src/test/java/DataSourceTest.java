@@ -11,6 +11,7 @@ public class DataSourceTest {
     @Test
     public void test() throws Exception {
 
+
         ComboPooledDataSource dataSource=new ComboPooledDataSource();
         dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
         dataSource.setJdbcUrl("jdbc:mysql://34.92.8.172:3306/test?serverTimezone=GMT%2B8&characterEncoding=utf8");
