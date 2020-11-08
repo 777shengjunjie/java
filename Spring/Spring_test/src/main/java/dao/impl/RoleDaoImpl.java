@@ -22,4 +22,18 @@ public class RoleDaoImpl implements RoleDao {
         List<Role> roleList = jdbcTemplate.query(sql, new BeanPropertyRowMapper<Role>(Role.class));
         return roleList;
     }
+
+    @Override
+    public void save(Role role) {
+        String sql="insert into sys_role values(?,?,?) ";
+        jdbcTemplate.update(sql,null,role.getRoleName(),role.getRoleDesc());
+    }
+
+    @Override
+    public List<Role> findRoleByUserID(Long id) {
+        //sys_user_role 别名为ur
+        String sql ="select * from sys_user_role ur ,sys_role r where ur.roleId = r.id and ur.userId = ? ";
+        List<Role> roles = jdbcTemplate.query(sql, new BeanPropertyRowMapper<Role>(Role.class), id);
+        return roles;
+    }
 }

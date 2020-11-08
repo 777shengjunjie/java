@@ -10,9 +10,11 @@
         <module name="spring_ioc" />
         <module name="spring_ioc_anno" />
         <module name="spring_aop" />
+        <module name="Mybatis_quick" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9">
+      <module name="Mybatis_quick" target="1.5" />
       <module name="spring_aop" target="1.9" />
       <module name="spring_ioc" target="1.9" />
       <module name="spring_ioc_anno" target="1.9" />

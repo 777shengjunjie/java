@@ -24,12 +24,28 @@
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
        <property name="dataSource" ref="dataSource"/>
     </bean>
-
+    <!--配置RoleService对象-->
     <bean id="roleService" class="service.impl.RoleServiceImpl">
         <property name="roleDao" ref="roleDao"/>
     </bean>
-
+    <!--配置RoleDao对象-->
     <bean id="roleDao" class="dao.impl.RoleDaoImpl">
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
+
+
+
+    <!--配置UserService对象-->
+    <bean id="userService" class="service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"/>
+        <property name="roleDao" ref="roleDao"/>
+    </bean>
+    <!--配置UserDao对象-->
+    <bean id="userDao" class="dao.impl.UserDaoImpl">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+
+
+
 </beans>
