@@ -1,7 +1,7 @@
 package dao;
 
 
-import domain.Role;
+import ssmweb.domain.Role;
 
 import java.util.List;
 

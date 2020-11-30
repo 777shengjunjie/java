@@ -25,7 +25,7 @@
        <property name="dataSource" ref="dataSource"/>
     </bean>
     <!--配置RoleService对象-->
-    <bean id="roleService" class="service.impl.RoleServiceImpl">
+    <bean id="roleService" class="ssmweb.service.impl.RoleServiceImpl">
         <property name="roleDao" ref="roleDao"/>
     </bean>
     <!--配置RoleDao对象-->
@@ -36,7 +36,7 @@
 
 
     <!--配置UserService对象-->
-    <bean id="userService" class="service.impl.UserServiceImpl">
+    <bean id="userService" class="ssmweb.service.impl.UserServiceImpl">
         <property name="userDao" ref="userDao"/>
         <property name="roleDao" ref="roleDao"/>
     </bean>

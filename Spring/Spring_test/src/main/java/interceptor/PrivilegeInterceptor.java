@@ -1,6 +1,6 @@
 package interceptor;
 
-import domain.User;
+import ssmweb.domain.User;
 import org.springframework.web.servlet.HandlerInterceptor;
 
 import javax.servlet.http.HttpServletRequest;

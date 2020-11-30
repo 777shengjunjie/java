@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/Mybatis_multi" />
     <file type="web" url="file://$PROJECT_DIR$/Mybatis_quick" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/ssmweb" />
+    <file type="web" url="file://$PROJECT_DIR$/ssmweb2" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -12,6 +16,11 @@
         <option value="$PROJECT_DIR$/spring_ioc_anno/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_test/pom.xml" />
         <option value="$PROJECT_DIR$/Mybatis_quick/pom.xml" />
+        <option value="$PROJECT_DIR$/Mybatis_multi/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/ssmweb/pom.xml" />
+        <option value="$PROJECT_DIR$/ssmweb2/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-boot/pom.xml" />
       </list>
     </option>
   </component>

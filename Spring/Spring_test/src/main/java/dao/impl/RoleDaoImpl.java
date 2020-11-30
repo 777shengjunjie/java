@@ -1,7 +1,7 @@
 package dao.impl;
 
 import dao.RoleDao;
-import domain.Role;
+import ssmweb.domain.Role;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 

@@ -1,6 +1,6 @@
 package dao;
 
-import domain.User;
+import ssmweb.domain.User;
 
 import java.util.List;
 

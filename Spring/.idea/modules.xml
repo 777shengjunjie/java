@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mybatis_multi/Mybatis_multi.iml" filepath="$PROJECT_DIR$/Mybatis_multi/Mybatis_multi.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mybatis_quick/Mybatis_quick.iml" filepath="$PROJECT_DIR$/Mybatis_quick/Mybatis_quick.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring.iml" filepath="$PROJECT_DIR$/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-boot/Spring-boot.iml" filepath="$PROJECT_DIR$/Spring-boot/Spring-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring_test/Spring_test.iml" filepath="$PROJECT_DIR$/Spring_test/Spring_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_aop/spring_aop.iml" filepath="$PROJECT_DIR$/spring_aop/spring_aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_ioc/spring_ioc.iml" filepath="$PROJECT_DIR$/spring_ioc/spring_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_ioc_anno/spring_ioc_anno.iml" filepath="$PROJECT_DIR$/spring_ioc_anno/spring_ioc_anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm/ssm.iml" filepath="$PROJECT_DIR$/ssm/ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssmweb/ssmweb.iml" filepath="$PROJECT_DIR$/ssmweb/ssmweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssmweb2/ssmweb2.iml" filepath="$PROJECT_DIR$/ssmweb2/ssmweb2.iml" />
     </modules>
   </component>
 </project>

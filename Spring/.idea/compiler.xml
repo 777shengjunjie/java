@@ -2,23 +2,39 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring_test" />
+        <module name="Mybatis_multi" />
+        <module name="ssmweb" />
         <module name="spring_ioc" />
+        <module name="Mybatis_quick" />
+        <module name="Spring-boot" />
+        <module name="Spring_test" />
+        <module name="ssmweb2" />
+        <module name="ssm" />
         <module name="spring_ioc_anno" />
         <module name="spring_aop" />
-        <module name="Mybatis_quick" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9">
+      <module name="Mybatis_multi" target="1.9" />
       <module name="Mybatis_quick" target="1.5" />
+      <module name="Spring-boot" target="1.8" />
       <module name="spring_aop" target="1.9" />
       <module name="spring_ioc" target="1.9" />
       <module name="spring_ioc_anno" target="1.9" />
       <module name="Spring_test" target="1.9" />
+      <module name="ssm" target="1.8" />
+      <module name="ssmweb" target="1.8" />
+      <module name="ssmweb2" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Spring-boot" options="-parameters" />
+    </option>
   </component>
 </project>

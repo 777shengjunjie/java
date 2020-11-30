@@ -1,7 +1,7 @@
 package dao.impl;
 
 import dao.UserDao;
-import domain.User;
+import ssmweb.domain.User;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

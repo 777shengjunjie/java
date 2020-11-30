@@ -1,0 +1,14 @@
+#jdbc:
+#  driverClassName: com.mysql.cj.jdbc.Driver
+#  url: jdbc:mysql://34.92.8.172:3306/test
+#  username: root
+#  password: shengjunjie
+#激活配置文件；需要指定配置文件的名称
+spring:
+  profiles:
+    active: abc,defs
+  datasource:
+    url: jdbc:mysql://34.92.8.172:3306/test
+    username: root
+    password: shengjunjie
+    driver-class-name: com.mysql.cj.jdbc.Driver
