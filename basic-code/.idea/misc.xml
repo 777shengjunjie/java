@@ -21,6 +21,8 @@
         <option value="$PROJECT_DIR$/maven_java/pom.xml" />
         <option value="$PROJECT_DIR$/maven_web/pom.xml" />
         <option value="$PROJECT_DIR$/travel/pom.xml" />
+        <option value="$PROJECT_DIR$/SaaS/pom.xml" />
+        <option value="$PROJECT_DIR$/ihrm_parent/pom.xml" />
       </list>
     </option>
   </component>

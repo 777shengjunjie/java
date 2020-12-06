@@ -15,10 +15,121 @@ package NumRookCaptures_999;
 public class NumRookCaptures {
 
     public static void main(String[] args) {
-
+        char[][] board = {
+                {'.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.'},
+                {'.','.','.','R','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.'},
+                {'.','.','.','.','.','.','.','.'}
+        };
+        int result=new NumRookCaptures().numRookCaptures(board);
+        System.out.println(result);
     }
-
     public int numRookCaptures(char[][] board){
 
+        int ans=0;
+        int row=0,col=0;
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                if (board[i][j]=='R'){
+                    row=i;
+                    col=j;
+                    break;
+                }
+            }
+        }
+        int up=row-1,low=row+1;
+        int left=col-1,right=col+1;
+        while (left>=0){
+            if (board[row][left]=='p'){
+                ans++;
+                for (int i = left; i < col; i++) {
+                    if (board[row][i]=='B'){
+                        ans--;
+                        break;
+                    }
+                }
+                break;
+            }
+            left--;
+        }
+
+        while (right<board[0].length){
+            if (board[row][right]=='p'){
+                ans++;
+                for (int i = right; i > col; i--) {
+                    if (board[row][i]=='B'){
+                        ans--;
+                        break;
+                    }
+                }
+                break;
+            }
+           right++;
+        }
+
+        while (up>=0){
+            if (board[up][col]=='p'){
+                ans++;
+                for (int i = up; i < row; i++) {
+                    if (board[i][col]=='B'){
+                        ans--;
+                        break;
+                    }
+                }
+                break;
+            }
+            up--;
+        }
+
+        while (low<board.length){
+            if (board[low][col]=='p'){
+                ans++;
+                for (int i = low; i > row; i--) {
+                    if (board[i][col]=='B'){
+                        ans--;
+                        break;
+                    }
+                }
+                break;
+            }
+            low++;
+        }
+
+        return ans;
     }
+
+
+    public int numRookCaptures2(char[][] board) {
+        int cnt = 0, st = 0, ed = 0;
+        int[] dx = {0, 1, 0, -1};
+        int[] dy = {1, 0, -1, 0};
+        for (int i = 0; i < 8; ++i) {
+            for (int j = 0; j < 8; ++j) {
+                if (board[i][j] == 'R') {
+                    st = i;
+                    ed = j;
+                    break;
+                }
+            }
+        }
+        for (int i = 0; i < 4; ++i) {
+            for (int step = 0;; ++step) {
+                int tx = st + step * dx[i];
+                int ty = ed + step * dy[i];
+                if (tx < 0 || tx >= 8 || ty < 0 || ty >= 8 || board[tx][ty] == 'B') {
+                    break;
+                }
+                if (board[tx][ty] == 'p') {
+                    cnt++;
+                    break;
+                }
+            }
+        }
+        return cnt;
+    }
+
 }
