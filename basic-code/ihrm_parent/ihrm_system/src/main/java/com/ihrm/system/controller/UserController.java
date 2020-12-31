@@ -8,13 +8,22 @@ import com.ihrm.common.entity.ResultCode;
 
 import com.ihrm.common.exception.CommonException;
 import com.ihrm.common.utils.JwtUtils;
+import com.ihrm.common.utils.PermissionConstants;
 import com.ihrm.domain.system.Permission;
+import com.ihrm.domain.system.Role;
 import com.ihrm.domain.system.User;
 import com.ihrm.domain.system.response.ProfileResult;
 import com.ihrm.domain.system.response.UserResult;
 import com.ihrm.system.service.PermissionService;
 import com.ihrm.system.service.UserService;
 import io.jsonwebtoken.Claims;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.shiro.crypto.hash.Md5Hash;
+import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.util.StringUtils;
@@ -22,6 +31,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.websocket.server.PathParam;
+import java.io.Serializable;
+import java.security.Security;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -113,7 +124,8 @@ public class UserController extends BaseController {
     /**
      * 根据id删除
      */
-    @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
+    @RequiresPermissions("api-user-delete")
+    @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE, name = "api-user-delete")
     public Result delete(@PathVariable(value = "id") String id) {
         userService.deleteById(id);
         return new Result(ResultCode.SUCCESS);
@@ -126,18 +138,51 @@ public class UserController extends BaseController {
     public Result login(@RequestBody Map<String, String> loginMap) {
         String mobile = loginMap.get("mobile");
         String password = loginMap.get("password");
-        User user = userService.findByMobile(mobile);
-        //登录失败
-        if (user == null || !user.getPassword().equals(password)) {
-            return new Result(ResultCode.MOBILEORPASSWORDERROR);
-        } else {
-            //登录成功
-            Map<String, Object> map = new HashMap<>();
-            map.put("companyId", user.getCompanyId());
-            map.put("companyName", user.getCompanyName());
-            String token = jwtUtils.createJwt(user.getId(), user.getUsername(), map);
-            return new Result(ResultCode.SUCCESS, token);
+
+        try {
+            //1.构造登录令牌 UsernamePasswordToken
+            //加密密码
+            password = new Md5Hash(password, mobile, 3).toString();//1.密码，盐，加密次数
+            UsernamePasswordToken upToken = new UsernamePasswordToken(mobile, password);
+            //2.获取subject
+            Subject subject = SecurityUtils.getSubject();
+            //3.调用login方法，进入realm完成认证
+            subject.login(upToken);
+            //4.获取sessionID
+            String sessionId = (String) subject.getSession().getId();
+            //5.构造返回结果
+            return new Result(ResultCode.SUCCESS, sessionId);
+        } catch (Exception e) {
+           return new Result(ResultCode.MOBILEORPASSWORDERROR);
         }
+
+
+//        User user = userService.findByMobile(mobile);
+//        //登录失败
+//        if (user == null || !user.getPassword().equals(password)) {
+//            return new Result(ResultCode.MOBILEORPASSWORDERROR);
+//        } else {
+//            //登录成功
+//            //api权限字符串
+//            StringBuilder sb=new StringBuilder();
+//            //获取到所有可访问的权限
+//            for (Role role : user.getRoles()) {
+//                for (Permission perm : role.getPermissions()) {
+//                    if (perm.getType()== PermissionConstants.PERMISSION_API){
+//                        sb.append(perm.getCode()).append(",");
+//                    }
+//                }
+//            }
+//
+//            Map<String, Object> map = new HashMap<>();
+//            map.put("apis",sb.toString());//可访问的api权限字符串
+//            map.put("companyId", user.getCompanyId());
+//            map.put("companyName", user.getCompanyName());
+//            String token = jwtUtils.createJwt(user.getId(), user.getUsername(), map);
+//            return new Result(ResultCode.SUCCESS, token);
+//        }
+
+
     }
 
     /**
@@ -146,9 +191,10 @@ public class UserController extends BaseController {
      * 2.根据用户id查询用户
      * 3.构建返回对象
      * 4.响应
+     *
      * @return
      */
-    @RequestMapping(value = "/profile",method = RequestMethod.POST)
+    @RequestMapping(value = "/profile", method = RequestMethod.POST)
     public Result profile(HttpServletRequest request) throws Exception {
 
         /**
@@ -167,27 +213,33 @@ public class UserController extends BaseController {
         String token = authorization.replace("Bearer ", "");
         //3.解析token
         Claims claims = jwtUtils.parseJwt(token);*/
+        //===========================================
+//        String userId = claims.getId();
+//
+//        //String userId="1336633505424044032";
+//        //获取到用户信息
+//        User user = userService.findById(userId);
+//
+//        ProfileResult result = null;
+//        if ("user".equals(user.getLevel())) {
+//            result = new ProfileResult(user);
+//        } else {
+//
+//            Map<String, Object> map = new HashMap<>();
+//            if ("coAdmin".equals(user.getLevel())) {
+//                map.put("enVisible", "1");
+//            }
+//            List<Permission> list = permissionService.findAll(map);
+//            result = new ProfileResult(user, list);
+//        }
 
-        String userId = claims.getId();
-
-        //String userId="1336633505424044032";
-        //获取到用户信息
-        User user = userService.findById(userId);
-
-        ProfileResult result =null;
-        if ("user".equals(user.getLevel())){
-           result  = new ProfileResult(user);
-        }else {
-
-            Map<String,Object> map=new HashMap<>();
-            if ("coAdmin".equals(user.getLevel())){
-                map.put("enVisible","1");
-            }
-            List<Permission> list = permissionService.findAll(map);
-            result=new ProfileResult(user,list);
-        }
-
-        return new Result(ResultCode.SUCCESS,result);
+        //获取session中的安全数据
+        Subject subject = SecurityUtils.getSubject();
+        //1.subject获取所有的安全数据集合
+        PrincipalCollection principals = subject.getPrincipals();
+        //2.获取安全数据
+        ProfileResult result = (ProfileResult)principals.getPrimaryPrincipal();
+        return new Result(ResultCode.SUCCESS, result);
 
     }
 

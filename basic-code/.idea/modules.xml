@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/ihrm_parent/ihrm_system/ihrm_system.iml" filepath="$PROJECT_DIR$/ihrm_parent/ihrm_system/ihrm_system.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven_java/maven_java.iml" filepath="$PROJECT_DIR$/maven_java/maven_java.iml" />
       <module fileurl="file://$PROJECT_DIR$/maven_web/maven_web.iml" filepath="$PROJECT_DIR$/maven_web/maven_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../java学习文件/【bxg】SaaS实战/07-Shiro高级及SaaS-HRM的认证授权/07-Shiro高级及SaaS-HRM的认证授权/代码/shiro_springboot(1)/shiro_springboot/shiro_springboot.iml" filepath="$PROJECT_DIR$/../../java学习文件/【bxg】SaaS实战/07-Shiro高级及SaaS-HRM的认证授权/07-Shiro高级及SaaS-HRM的认证授权/代码/shiro_springboot(1)/shiro_springboot/shiro_springboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/tomcat/tomcat.iml" filepath="$PROJECT_DIR$/tomcat/tomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/tomcat_learning/tomcat_learning.iml" filepath="$PROJECT_DIR$/tomcat_learning/tomcat_learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/travel/travel.iml" filepath="$PROJECT_DIR$/travel/travel.iml" />

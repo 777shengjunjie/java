@@ -1,10 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da7a52b-6bc9-444f-a26c-193a905474c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/~$Java.docx" beforeDir="false" afterPath="$PROJECT_DIR$/~$Java.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL0352.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/~WRL2396.tmp" beforeDir="false" />
+    <list default="true" id="add35ca3-add6-4c5e-8b49-1506e43a0619" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/arithmetic/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/AddToArrayForm_989/AddToArrayForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/BusyStudent_1450/BusyStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/CanBeEqual_1460/CanBeEqual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/DominantIndex_747/DominantIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/DuplicateZeros_1089/DuplicateZeros.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/HeightChecker_1051/HeightChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/IsMonotonic_896/IsMonotonic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/IsOneBitCharacter_717/IsOneBitCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/MaxProduct_1464/MaxProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/OddCells_1252/OddCells.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/SumZero_1304/SumZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/SummaryRanges_228/SummaryRanges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arithmetic/Array/src/Transpose_867/Transpose.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__com_google_guava_guava_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_8_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_apache_shiro_shiro_core_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_apache_shiro_shiro_spring_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_apache_shiro_shiro_web_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_crazycake_shiro_redis_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_spring_orm_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__org_springframework_spring_tx_5_0_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/.idea/libraries/Maven__redis_clients_jedis_2_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/controller/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/shiro/realm/IhrmRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/shiro/session/CustomSessionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/src/main/java/com/ihrm/company/ShiroConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/src/main/java/com/ihrm/company/companyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/ShiroConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/shiro/realm/UserRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arithmetic/Array/src/FindShortestSubArray_697/FindShortestSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/Array/src/FindShortestSubArray_697/FindShortestSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arithmetic/out/production/Array/ReplaceElements_1299/ReplaceElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/arithmetic/out/production/Array/ReplaceElements_1299/ReplaceElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/ihrm_common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/ihrm_common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/handler/BaseExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/handler/BaseExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/interceptor/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/src/main/java/com/ihrm/common/interceptor/JwtInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/target/classes/com/ihrm/common/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/target/classes/com/ihrm/common/controller/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/target/classes/com/ihrm/common/handler/BaseExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common/target/classes/com/ihrm/common/handler/BaseExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/ihrm_common_model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/ihrm_common_model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/src/main/java/com/ihrm/domain/system/Permission.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/src/main/java/com/ihrm/domain/system/Permission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/src/main/java/com/ihrm/domain/system/response/ProfileResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/src/main/java/com/ihrm/domain/system/response/ProfileResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/target/classes/com/ihrm/domain/system/Permission.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/target/classes/com/ihrm/domain/system/Permission.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/target/classes/com/ihrm/domain/system/response/ProfileResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_common_model/target/classes/com/ihrm/domain/system/response/ProfileResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/ihrm_company.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/ihrm_company.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/src/main/java/com/ihrm/company/CompanyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/src/main/java/com/ihrm/company/CompanyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/target/classes/com/ihrm/company/CompanyApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_company/target/classes/com/ihrm/company/CompanyApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_parent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_parent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/ihrm_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/ihrm_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/SystemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/SystemConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/java/com/ihrm/system/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/service/PermissionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/service/PermissionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/service/UserService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/service/UserService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/ihrm_system/target/classes/com/ihrm/system/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-code/ihrm_parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/basic-code/ihrm_parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/RabbitMQ高级特性/RabbitMQ集群搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/frame/RabbitMQ高级特性/RabbitMQ集群搭建.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +134,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1iD5TH0dSt11PMdplee2VGbv3u6" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\12284\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.7660.26\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mBfXJ0aNhl21gOOp1P1Y0SgSdt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,20 +150,28 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5da7a52b-6bc9-444f-a26c-193a905474c1" name="Default Changelist" comment="" />
-      <created>1601429328842</created>
+      <changelist id="add35ca3-add6-4c5e-8b49-1506e43a0619" name="Default Changelist" comment="" />
+      <created>1608971945214</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601429328842</updated>
-      <workItem from="1601429333704" duration="34000" />
+      <updated>1608971945214</updated>
+      <workItem from="1608971946373" duration="42000" />
     </task>
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

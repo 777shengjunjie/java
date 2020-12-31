@@ -240,7 +240,7 @@ mkdir /etc/haproxy
 groupadd -r -g 149 haproxy
 useradd -g haproxy -r -s /sbin/nologin -u 149 haproxy
 //创建haproxy配置文件
-//mkdir /etc/haproxy
+mkdir /etc/haproxy
 vim /etc/haproxy/haproxy.cfg
 ```
 

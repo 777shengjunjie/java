@@ -67,7 +67,7 @@ public class JwtInterceptor extends HandlerInterceptorAdapter {
                 if(apis.contains(name)) {*/
                     request.setAttribute("user_claims",claims);
                     return true;
-                /*}else {
+               /* }else {
                     throw new CommonException(ResultCode.UNAUTHORISE);
                 }*/
             }
