@@ -31,9 +31,10 @@ public class SystemApplication {
         return new JwtUtils();
     }
 
-    //解决NO session的问题
+    //解决NO session（延迟加载）的问题
     @Bean
     public OpenEntityManagerInViewFilter openEntityManagerInViewFilter(){
         return new OpenEntityManagerInViewFilter();
     }
+
 }
