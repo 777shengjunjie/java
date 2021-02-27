@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/Geometry_arithmetic/Geometry_arithmetic.iml" filepath="$PROJECT_DIR$/Geometry_arithmetic/Geometry_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Graph_arithmetic/Graph_arithmetic.iml" filepath="$PROJECT_DIR$/Graph_arithmetic/Graph_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Greedy_arithmetic/Greedy_arithmetic.iml" filepath="$PROJECT_DIR$/Greedy_arithmetic/Greedy_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashTable/HashTable.iml" filepath="$PROJECT_DIR$/HashTable/HashTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" filepath="$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" filepath="$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queue_arithmetic/Queue_arithmetic.iml" filepath="$PROJECT_DIR$/Queue_arithmetic/Queue_arithmetic.iml" />
