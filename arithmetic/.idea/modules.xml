@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Array/Array.iml" filepath="$PROJECT_DIR$/Array/Array.iml" />
       <module fileurl="file://$PROJECT_DIR$/BitManipulation_arithmetic/BitManipulation_arithmetic.iml" filepath="$PROJECT_DIR$/BitManipulation_arithmetic/BitManipulation_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Brainteaser_arithmetic/Brainteaser_arithmetic.iml" filepath="$PROJECT_DIR$/Brainteaser_arithmetic/Brainteaser_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Daily/Daily.iml" filepath="$PROJECT_DIR$/Daily/Daily.iml" />
       <module fileurl="file://$PROJECT_DIR$/Depth_first_Search_arithmetic/Depth_first_Search_arithmetic.iml" filepath="$PROJECT_DIR$/Depth_first_Search_arithmetic/Depth_first_Search_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Design_arithmetic/Design_arithmetic.iml" filepath="$PROJECT_DIR$/Design_arithmetic/Design_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Geometry_arithmetic/Geometry_arithmetic.iml" filepath="$PROJECT_DIR$/Geometry_arithmetic/Geometry_arithmetic.iml" />
@@ -12,7 +13,9 @@
       <module fileurl="file://$PROJECT_DIR$/Greedy_arithmetic/Greedy_arithmetic.iml" filepath="$PROJECT_DIR$/Greedy_arithmetic/Greedy_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/HashTable/HashTable.iml" filepath="$PROJECT_DIR$/HashTable/HashTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" filepath="$PROJECT_DIR$/Heap_arithmetic/Heap_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedList_arithmetic/LinkedList_arithmetic.iml" filepath="$PROJECT_DIR$/LinkedList_arithmetic/LinkedList_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" filepath="$PROJECT_DIR$/List_arithmetic/List_arithmetic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Math_arithmetic/Math_arithmetic.iml" filepath="$PROJECT_DIR$/Math_arithmetic/Math_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queue_arithmetic/Queue_arithmetic.iml" filepath="$PROJECT_DIR$/Queue_arithmetic/Queue_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion_arithmetic/Recursion_arithmetic.iml" filepath="$PROJECT_DIR$/Recursion_arithmetic/Recursion_arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/Sort_arithmetic/Sort_arithmetic.iml" filepath="$PROJECT_DIR$/Sort_arithmetic/Sort_arithmetic.iml" />

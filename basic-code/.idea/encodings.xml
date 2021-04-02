@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/SaaS/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SaaS/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day17/src/main/resources/敏感词汇.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/halo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_parent/ihrm_common/src/main/java" charset="UTF-8" />
@@ -9,5 +10,6 @@
     <file url="file://$PROJECT_DIR$/ihrm_parent/ihrm_company/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ihrm_parent/ihrm_system/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/maven_java/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../java学习文件/【bxg】SaaS实战/07-Shiro高级及SaaS-HRM的认证授权/07-Shiro高级及SaaS-HRM的认证授权/代码/shiro_springboot(1)/shiro_springboot/src/main/java" charset="UTF-8" />
   </component>
 </project>
