@@ -13,6 +13,7 @@ public class CombinationSum {
         int[] candidates={2,3,6,7};
         int target=7;
         List<List<Integer>> result=new CombinationSum().combinationSum(candidates,target);
+        System.out.println(result);
     }
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
