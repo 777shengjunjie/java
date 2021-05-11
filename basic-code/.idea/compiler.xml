@@ -37,7 +37,6 @@
       <module name="maven_web" target="1.7" />
       <module name="SaaS" target="1.8" />
       <module name="shiro_springboot" target="1.8" />
-      <module name="test" target="1.7" />
       <module name="tomcat" target="1.8" />
       <module name="tomcat_learning" target="1.8" />
       <module name="travel" target="1.8" />
