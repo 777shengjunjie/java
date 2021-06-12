@@ -1,17 +1,21 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.locks.Lock;
 
 public class test {
 
+    static int a=4;
+
     public static void main(String[] args) {
 
+        test t=new test();
+        System.out.println(t.a);
+        test.a=20;
+        t.a=10;
+        System.out.println(t.a);
 
         int[] nums={2,5,3,5};
         int target=6;
         int result=new test().purchasePlans(nums,target);
+
         System.out.println(result);
     }
 
